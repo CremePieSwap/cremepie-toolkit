@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
-import { SvgProps } from "../../../components/Svg";
+import { SvgProps, InActive } from "../../../components/Svg";
 import * as IconModule from "../icons";
 import Accordion from "./Accordion";
 import { MenuEntry, LinkLabel, LinkStatus } from "./MenuEntry";
@@ -70,6 +70,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
         return (
           <MenuEntry key={entry.label} isActive={entry.href === location.pathname} className={calloutClass}>
             <MenuLink href={entry.href} onClick={handleClick}>
+              {entry.href === location.pathname ? <div style={{position: 'absolute', left: 0}}><InActive /></div> : null}
               {iconElement}
               <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
               {entry.status && (
