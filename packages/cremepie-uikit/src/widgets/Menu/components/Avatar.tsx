@@ -39,23 +39,23 @@ const Avatar: React.FC<AvatarProps> = ({ profile }) => {
     <NoProfileAvatar width="32px" height="32px" />
   );
 
-  if (isExternal) {
-    return (
-      <StyledAvatar title={username}>
-        <a href={link} aria-label={ariaLabel}>
-          {icon}
-        </a>
-        {showPip && <Pip />}
-      </StyledAvatar>
-    );
-  }
+  // if (isExternal) {
+  //   return (
+  //     <StyledAvatar title={username}>
+  //       {/* <a href={link} aria-label={ariaLabel}> */}
+  //         {icon}
+  //       {/* </a> */}
+  //       {/* {showPip && <Pip />} */}
+  //     </StyledAvatar>
+  //   );
+  // }
 
   return (
     <StyledAvatar title={username}>
-      <Link to={link} aria-label={ariaLabel}>
+      {/* <Link to={link} aria-label={ariaLabel}> */}
         {icon}
-      </Link>
-      {showPip && <Pip />}
+      {/* </Link> */}
+      {/* {showPip && <Pip />} */}
     </StyledAvatar>
   );
 };

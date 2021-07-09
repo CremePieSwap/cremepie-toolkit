@@ -22,7 +22,7 @@ const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
   .mobile-icon {
-    width: 32px;
+    width: 160px;
     ${({ theme }) => theme.mediaQueries.nav} {
       display: none;
     }
@@ -59,7 +59,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
 
   return (
     <Flex>
-      <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="24px">
+      <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="8px">
         {isPushed ? (
           <HamburgerCloseIcon width="24px" color="textSubtle" />
         ) : (
