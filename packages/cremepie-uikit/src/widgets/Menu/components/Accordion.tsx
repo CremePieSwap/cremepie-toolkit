@@ -62,7 +62,7 @@ const Accordion: React.FC<Props> = ({
             {status.text}
           </LinkStatusComponent>
         )}
-        {isOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
+        {/* {isOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />} */}
       </MenuEntry>
       <AccordionContent
         isOpen={isOpen}
