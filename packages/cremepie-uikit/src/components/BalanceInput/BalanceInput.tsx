@@ -31,7 +31,7 @@ const BalanceInput: React.FC<BalanceInputProps> = ({
         {...inputProps}
       />
       {currencyValue && (
-        <Text fontSize="12px" textAlign="right" color="textSubtle">
+        <Text fontSize="12px" textAlign="right" color="primary">
           {currencyValue}
         </Text>
       )}
