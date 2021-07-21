@@ -11,6 +11,7 @@ interface Props {
 const PriceLink = styled.a`
   display: flex;
   align-items: center;
+  justify-content: center;
   svg {
     transition: transform 0.3s;
   }
@@ -24,11 +25,12 @@ const PriceLink = styled.a`
 const CakePrice: React.FC<Props> = ({ cakePriceUsd }) => {
   return cakePriceUsd ? (
     <PriceLink
-      href="https://swap.cremepieswap.finance/#/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+      href="https://swap.cremepieswap.finance/#/swap"
       target="_blank"
     >
-      <PancakeRoundIcon width="24px" mr="8px" />
-      <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      {/* <PancakeRoundIcon width="24px" mr="8px" /> */}
+      <Text color="textSubtle" bold style={{marginRight: 5}}>CPIE</Text>
+      <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(6)}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />

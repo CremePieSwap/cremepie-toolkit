@@ -13,9 +13,9 @@ interface Props extends PanelProps, PushedProps {}
 
 const Container = styled.div`
   flex: none;
-  padding: 8px 4px;
+  padding: 20px 4px;
   background-color: ${({ theme }) => theme.nav.background};
-  border-top: solid 2px rgba(133, 133, 133, 0.1);
+  // border-top: solid 2px rgba(133, 133, 133, 0.1);
 `;
 
 const SettingsEntry = styled.div`
@@ -27,10 +27,10 @@ const SettingsEntry = styled.div`
 `;
 
 const SocialEntry = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: ${MENU_ENTRY_HEIGHT}px;
+  display: block;
+  // align-items: center;
+  // justify-content: center;
+  // height: ${MENU_ENTRY_HEIGHT}px;
   padding: 0 16px;
 `;
 
@@ -60,10 +60,10 @@ const PanelFooter: React.FC<Props> = ({
         <CakePrice cakePriceUsd={cakePriceUsd} />
         <SocialLinks />
       </SocialEntry>
-      <SettingsEntry>
+      {/* <SettingsEntry>
         <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
         <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
-      </SettingsEntry>
+      </SettingsEntry> */}
     </Container>
   );
 };
