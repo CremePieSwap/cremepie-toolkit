@@ -8,6 +8,7 @@ export { default as HomeIcon } from "./Home";
 export { default as IfoIcon } from "./Ifo";
 export { default as InfoIcon } from "./Info";
 export { default as LogoIcon } from "./Logo";
+export { default as LotteryIcon } from "./Lottery";
 export { default as MoonIcon } from "./Moon";
 export { default as MoreIcon } from "./More";
 export { default as NftIcon } from "./Nft";
