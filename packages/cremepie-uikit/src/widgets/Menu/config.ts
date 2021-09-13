@@ -27,11 +27,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://swap.cremepieswap.finance",
+        href: "https://swap.cremepieswapfinance.com",
       },
       {
         label: "Liquidity",
-        href: "https://swap.cremepieswap.finance/#/pool",
+        href: "https://swap.cremepieswapfinance.com/#/pool",
       },
     ],
   },
